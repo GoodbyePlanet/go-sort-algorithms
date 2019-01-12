@@ -18,7 +18,7 @@ func bubbleSort(items []int) {
 
 func main() {
 
-	numbers := []int{4, 3, 2, 5, 1, 6, 9}
+	numbers := utils.GetNumbers()
 	fmt.Println("Unsorted integers", numbers)
 
 	bubbleSort(numbers)
