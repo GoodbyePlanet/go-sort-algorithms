@@ -5,17 +5,17 @@ import (
 	"go-sort-algorithms/utils"
 )
 
-func selectionSort(items []int) {
+func SelectionSort(items []int) {
 
 	for i := 0; i < len(items); i++ {
-		currentMinIndex := getCurrentMinIndex(items, i)
+		currentMinIndex := GetCurrentMinIndex(items, i)
 		if items[currentMinIndex] < items[i] {
 			utils.Swap(items, i, currentMinIndex)
 		}
 	}
 }
 
-func getCurrentMinIndex(items []int, index int) int {
+func GetCurrentMinIndex(items []int, index int) int {
 	min := index
 
 	for i := index + 1; i < len(items); i++ {
@@ -31,6 +31,6 @@ func main() {
 	numbers := utils.GetNumbers()
 	fmt.Println("Unsorted integers", numbers)
 
-	selectionSort(numbers)
+	SelectionSort(numbers)
 	fmt.Println("Sorted integers", numbers)
 }

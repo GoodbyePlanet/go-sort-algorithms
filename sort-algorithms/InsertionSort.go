@@ -5,7 +5,7 @@ import (
 	"go-sort-algorithms/utils"
 )
 
-func insertionSort(items []int) {
+func InsertionSort(items []int) {
 
 	for i := 0; i < len(items); i ++ {
 		for j := i; j > 0; j-- {
@@ -23,6 +23,6 @@ func main() {
 	numbers := utils.GetNumbers()
 	fmt.Println("Unsorted integers", numbers)
 
-	insertionSort(numbers)
+	InsertionSort(numbers)
 	fmt.Println("Sorted numbers", numbers)
 }
