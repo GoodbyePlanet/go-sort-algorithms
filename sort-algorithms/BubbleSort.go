@@ -5,7 +5,7 @@ import (
 	"go-sort-algorithms/utils"
 )
 
-func sort(items []int) {
+func bubbleSort(items []int) {
 
 	for i := 0; i < len(items)-1; i++ {
 		for j := 0; j < len(items)-1-i; j++ {
@@ -21,6 +21,6 @@ func main() {
 	numbers := []int{4, 3, 2, 5, 1, 6, 9}
 	fmt.Println("Unsorted integers", numbers)
 
-	sort(numbers)
+	bubbleSort(numbers)
 	fmt.Println("Sorted integers", numbers)
 }
