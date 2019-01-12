@@ -3,4 +3,4 @@ Implementation of BubbleSort, SelectionSort, InsertionSort, MergeSort and QuickS
 
 # Note
 I'm Java developer and I want to get familiar with Go programming language. 
-As the exercises I will try to implements aforementioned algorithms.
+As the exercises I will try to implement aforementioned algorithms.
