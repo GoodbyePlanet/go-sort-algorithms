@@ -17,3 +17,7 @@ func (stack *Stack) Pop() int {
 	stack.slice = stack.slice[0 : len(stack.slice)-1]
 	return topItem
 }
+
+func (stack *Stack) IsEmpty() bool {
+	return len(stack.slice) == 0
+}
